@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main_box">
+        <div class="date">
+            <div class="day">
+                <p id="getday"></p>
+                <p><span id="getdate"></span><span id="month"></span><span id="year"></span></p>
+                <p>Indian Standard Time</p>
+            </div>
+        </div>
+        <div class="date2">
+            <div class="quote">
+                <p id="title">It is one of the blessings of old friends that you can afford to be stupid with them.</p>
+                <p style="text-align: right;" id="author">Durgashankar Pal</p>
+                <div class="btn">
+                    <button id="reload">Reload</button>
+                </div>
+            </div>
+        </div>
+        <div class="date3">
+            <div class="day">
+                <p>Week</p>
+                <p id="week"></p>
+            </div>
+            </div>
+        <div class="date4">
+            <div class="stop">
+                <div style="display: flex;">
+                    <p id="sh">00 :</p>
+                    <p id="sm">00 :</p>
+                    <p id="ss">00 :</p>
+                    <p id = "smili">00</p>
+                </div> 
+                <button id="start">Start</button> 
+            </div>
+        </div>
+        <div class="clock">
+            <div class="hour">
+                <p id="hour">00</p>
+                <p class="dot">:</p>
+            </div>
+            <div class="min">
+                <p id="min"> 00 </p>
+                <p class="dot">:</p>
+            </div>
+            <div class="second">
+                <p id="sec"> 00 </p>
+            </div>
+            <div class="mili">
+                <p class="dot">:</p>
+                <p id="mili"> 00</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
