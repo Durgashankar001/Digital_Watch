@@ -68,6 +68,7 @@ const reset = () => {
 
 const callFun = () => {
     let x = document.getElementById("start").innerText
+    let y = document.getElementById("restart").innerText
 
     if (x == "Start") {
         start()
@@ -76,14 +77,21 @@ const callFun = () => {
     else if (x == "Puse") {
         puse()
         document.getElementById("start").innerText = "Stop"
+        document.getElementById("restart").style.display="inline"
     }
     else if (x == "Stop") {
         reset()
         document.getElementById("start").innerText = "Start"
+        document.getElementById("restart").style.display="none"
     }
 }
 
 document.getElementById("start").addEventListener("click", callFun)
+document.getElementById("restart").addEventListener("click", function(){
+    start()
+    document.getElementById("start").innerText = "Puse"
+    document.getElementById("restart").style.display="none"
+})
 
 setInterval(function () {
     const time = new Date().getTime()
